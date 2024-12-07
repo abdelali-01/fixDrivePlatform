@@ -1,0 +1,11 @@
+.imgs-animation::after {
+    content: '';
+    width: 800px;
+    height: 100vh;
+    background-color: #FFC68D;
+    position: absolute;
+    top: -30px;
+    right: -200px ;
+    z-index: -1;
+    border-radius: 50%;
+}

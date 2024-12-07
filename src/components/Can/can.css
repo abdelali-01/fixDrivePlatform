@@ -1,0 +1,54 @@
+.services-container{
+    align-items:flex-start;
+}
+.services-container {
+  height: 40px;
+  overflow: hidden;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90px;
+    animation: slideTopToBottom 8s infinite; 
+    color: #FF8000;
+}
+  
+  @keyframes slideTopToBottom {
+      0% {
+        transform: translateY(0);
+      }
+      20% {
+        transform: translateY(0); 
+      }
+      40% {
+        transform: translateY(-40px); 
+      }
+      60% {
+        transform: translateY(-80px); 
+      }
+      80% {
+        transform: translateY(-125px); 
+      }
+      100%{
+        transform: translateY(0);
+      }
+  }
+  
+  /* Delay for each word to create the sliding effect one after the other */
+  /* .service:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .service:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .service:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  .service:nth-child(4) {
+    animation-delay: 6s;
+  } */

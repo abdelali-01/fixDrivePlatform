@@ -1,0 +1,27 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.changeIcon {
+    background-color: #FFC68D;
+    border-radius: 10px;
+}
+.card-review {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-review:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style the user profile image */
+  .userProfile img {
+    border: 2px solid #ddd;
+  }
+  
+  /* Ensure that the card text area does not overflow */
+  .comment-review p {
+    flex-grow: 1;
+  }

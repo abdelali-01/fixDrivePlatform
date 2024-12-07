@@ -1,0 +1,16 @@
+.Why-Section {
+    padding: 100px 0;
+}
+
+.Whyimgs-animation::after {
+    content: '';
+    background-color: #FFC68D;
+    width: 80%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
