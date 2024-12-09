@@ -1,15 +1,12 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-.changeIcon {
-    background-color: #FFC68D;
-    border-radius: 10px;
-}
 .card-review {
-    background-color: #FFFFFF;
+    background-color:var(--elements-color);
     border-radius: 10px;
     height: 250px;
     transition: transform 0.3s ease;
+    border: 1px solid var(--white-color);
   }
   
   .card-review:hover {

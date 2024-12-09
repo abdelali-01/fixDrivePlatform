@@ -1,18 +1,15 @@
-.OurServices{
-    background-color: #E6F0FA;
-}
 
 .service-card {
     min-width: 200px;
-    background-color: #ffff;
+    background-color: var(--elements-color);
     -webkit-box-shadow: -4px 11px 50px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -4px 11px 50px -24px rgba(0,0,0,0.75);
     box-shadow: -4px 11px 50px -24px rgba(0,0,0,0.75);
     border-radius: 10px;
+    border: 1px solid var(--white-color);
     transition: .3s;
 }
 .service-card:hover {
-    background-color: #EEF5FA;
     scale: .99;
 }
 .service-card i {

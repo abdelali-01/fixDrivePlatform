@@ -1,0 +1,13 @@
+.ContactForm .input input , .ContactForm .input textarea{
+    background-color: var(--elements-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.ContactForm .input .TextNumber{
+    bottom: 5px;
+    right: 5px;
+    font-size: 14px;
+}

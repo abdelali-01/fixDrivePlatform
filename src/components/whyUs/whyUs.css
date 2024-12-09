@@ -4,7 +4,7 @@
 
 .Whyimgs-animation::after {
     content: '';
-    background-color: #FFC68D;
+    background-color:var(--elements-color);
     width: 80%;
     aspect-ratio: 1/1;
     position: absolute;

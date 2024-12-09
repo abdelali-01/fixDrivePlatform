@@ -1,0 +1,14 @@
+.cardSectionView {
+    background-color: var(--backgrounds-color);
+}
+
+.imgsServiceAnimation {
+    max-height: 600px;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.rangeServiceSection{
+    width: 80%;
+    margin: auto;
+}

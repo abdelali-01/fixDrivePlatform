@@ -36,15 +36,29 @@ export default function Reviews() {
         "Amazing! Everything was smooth and exceeded my expectations.",
       image: "Profile Image.png",
     },
+    {
+      name: "Michael Lee",
+      job: "Product Manager",
+      comment:
+        "Amazing! Everything was smooth and exceeded my expectations.",
+      image: "Profile Image.png",
+    },
+    {
+      name: "Michael Lee",
+      job: "Product Manager",
+      comment:
+        "Amazing! Everything was smooth and exceeded my expectations.",
+      image: "Profile Image.png",
+    },
   ];
 
   // Slider settings
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 768, // For tablets and phones
@@ -65,7 +79,7 @@ export default function Reviews() {
   return (
     <div className="reviews  text-center p-5">
       <h4 className="fw-bold">Loved by builders</h4>
-      <p className="text-black-50 ">
+      <p className="text-white-50 ">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, eligendi.
       </p>
       <Slider {...settings} className="container">
@@ -87,10 +101,10 @@ export default function Reviews() {
                 />
                 <div className="username-job">
                   <h5 className="fs-6 mb-0">{review.name}</h5>
-                  <p className="text-black-50 mb-0">{review.job}</p>
+                  <p className="text-white-50 mb-0">{review.job}</p>
                 </div>
               </div>
-              <div className="comment-review">
+              <div className="comment-review ">
                 <p>{review.comment}</p>
               </div>
             </div>

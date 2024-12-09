@@ -1,0 +1,68 @@
+.searchInput {
+    width: 60%;
+    background-color: #152836;
+    position: relative;
+}
+
+.searchInput input , .locationInput input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    color: #ffff;
+    width: 100%;
+}
+.searchInput i , .locationInput i{
+    color: #ffff;
+    position: absolute;
+    font-size: 22px;
+    left : 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.topFormPart select {
+    background-color: #152836;
+    outline: none;
+    border: none;
+    color: #ffff;
+    width: 20%;
+    padding: 0 8px;
+}
+
+.bottomFormPart .locationInput{
+    width: 40%;
+    background-color: #152836;
+}
+.range-container label p {
+    font-size: 12px;
+}
+
+.slider {
+      width: 100%;
+      appearance: none;
+      height: 6px;
+      background: #152836; /* Dark background for slider track */
+      outline: none;
+      border-radius: 3px;
+      margin: 0 -1px;
+    }
+
+    .slider::-webkit-slider-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background: #3da9fc; /* Blue handle */
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      background: #3da9fc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+

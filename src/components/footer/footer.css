@@ -1,0 +1,24 @@
+.FooterComp {
+    background-color: var(--elements-color);
+}
+.footer-links {
+    text-align: left !important;
+    flex-wrap: wrap;
+}
+.footer-links .links {
+    min-width: 200px;
+    flex-grow: 1;
+}
+.footer-links .links p{
+    font-size: 13px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.footer-links .links h5 {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer-links .links p:hover {
+    color: #EEEE !important;
+}

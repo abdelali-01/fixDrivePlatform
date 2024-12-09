@@ -1,14 +1,25 @@
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
 *{
     font-family: "Plus Jakarta Sans", sans-serif;
     padding: 0;
+}
+
+:root {
+    --backgrounds-color : #0B0C10 ;
+    --btn-color : #007CC7 ;
+    --white-color : #FFFFFF ;
+    --elements-color : #071620; 
 }
 ::-webkit-scrollbar { 
     width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #FF8000;
-    border-radius: 8px;
+    background-color: var(--btn-color);
 }
 ::-webkit-scrollbar-track {
-    background-color: #ffc68d9b;
+    background-color: var(--white-color);
 }
+

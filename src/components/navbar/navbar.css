@@ -1,6 +1,10 @@
 .sticky-top{
   backdrop-filter: blur(10px);
 }
+.navbar{
+  width: 90%;
+  margin: auto;
+}
 
 .dropdown:hover .dropdown-menu {
     display: block;

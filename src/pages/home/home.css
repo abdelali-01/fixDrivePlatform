@@ -1,11 +1,16 @@
-.imgs-animation::after {
+.home-container::after {
     content: '';
-    width: 800px;
-    height: 100vh;
-    background-color: #FFC68D;
+    width: 700px;
+    aspect-ratio: 1/1;
+    background-color: var(--elements-color);
     position: absolute;
     top: -30px;
     right: -200px ;
     z-index: -1;
     border-radius: 50%;
+}
+
+.HomePage {
+    background-color: var(--backgrounds-color) ;
+    color: var(--white-color);
 }

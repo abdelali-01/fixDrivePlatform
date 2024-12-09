@@ -9,22 +9,22 @@ export default function OurServices() {
         <div className="service-card p-4 m-4 col" role='button'>
             <i className="fa-solid fa-car-on  mb-4"></i>
             <h6>Fix Your Ride , Fast Service!</h6>
-            <p className="text-black-50 mt-2">Quick, reliable repairs to get you back on the road fast!</p>
+            <p className="text-white-50 mt-2">Quick, reliable repairs to get you back on the road fast!</p>
         </div>
         <div className="service-card p-4 m-4 col" role='button'>
             <i className="fa-solid fa-truck-fast mb-4"></i>
             <h6>Sell Your Car Fast</h6>
-            <p className="text-black-50 mt-2">Hassle-free car selling with the best deals!</p>
+            <p className="text-white-50 mt-2">Hassle-free car selling with the best deals!</p>
         </div>
         <div className="service-card p-4 m-4 col" role='button'>
             <i class="fa-solid fa-money-check-dollar mb-4"></i>
             <h6>Buy with Confidence!</h6>
-            <p className="text-black-50 mt-2">Find your perfect car, backed by trust and quality!</p>
+            <p className="text-white-50 mt-2">Find your perfect car, backed by trust and quality!</p>
         </div>
         <div className="service-card p-4 m-4 col" role='button'>
             <i class="fa-solid fa-car mb-4"></i>
             <h6>Rent & Drive Away Today</h6>
-            <p className="text-black-50 mt-2">Affordable rentals for your next adventure!</p>
+            <p className="text-white-50 mt-2">Affordable rentals for your next adventure!</p>
         </div>
       </div>
     </div>
