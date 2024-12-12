@@ -1,8 +1,13 @@
+.Can {
+  min-width: 350px;
+}
+
 .services-container{
     align-items:flex-start;
 }
 .services-container {
   height: 40px;
+  line-height: 40px;
   overflow: hidden;
 }
 .services {
@@ -29,26 +34,25 @@
         transform: translateY(-80px); 
       }
       80% {
-        transform: translateY(-125px); 
+        transform: translateY(-120px); 
       }
       100%{
         transform: translateY(0);
       }
   }
+
   
-  /* Delay for each word to create the sliding effect one after the other */
-  /* .service:nth-child(1) {
-    animation-delay: 0s;
+@media (max-width : 765px){
+  .Can p {
+    width: 100% !important;
   }
-  
-  .service:nth-child(2) {
-    animation-delay: 2s;
+}
+@media (max-width : 457px){
+  .Can {
+    font-size: 14px;
+    padding: 0 10px;
   }
-  
-  .service:nth-child(3) {
-    animation-delay: 4s;
+  .Can .services-container h3 {
+    font-size: 20px !important;
   }
-  
-  .service:nth-child(4) {
-    animation-delay: 6s;
-  } */
+}

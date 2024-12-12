@@ -1,16 +1,84 @@
 .Why-Section {
     padding: 100px 0;
 }
+.Why-Section .desc {
+    min-width: 300px;
+}
 
-.Whyimgs-animation::after {
-    content: '';
-    background-color:var(--elements-color);
-    width: 80%;
-    aspect-ratio: 1/1;
+.Whyimgs-animation {
+    min-width: 350px;
+    height: 50vh;
+    background-color: var(--elements-color);
+    border: 1px solid var(--white-color);
+    margin-left: -100px;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+.Whyimgs-animation .image-wrapper {
     position: absolute;
-    border-radius: 50%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fadeAnimation 16s infinite;
+  }
+
+  .Whyimgs-animation .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.Whyimgs-animation .image-wrapper::after {
+  content: attr(data-service); /* Retrieves the data-service value */
+  position: absolute;
+  top: 50%; /* Adjust this for placement */
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: #fff;
+  background-color: #007bc77c; /* Adds a semi-transparent background */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  z-index: 10;
+}
+
+
+.Whyimgs-animation .image-wrapper:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .Whyimgs-animation .image-wrapper:nth-child(2) {
+    animation-delay: 3s; 
+  }
+  
+  .Whyimgs-animation .image-wrapper:nth-child(3) {
+    animation-delay: 6s; 
+  }
+
+  .Whyimgs-animation .image-wrapper:nth-child(4) {
+    animation-delay: 9s; 
+  }
+  
+  /* Fade animation */
+  @keyframes fadeAnimation {
+    0%, 20% {
+        opacity: 0; /* Invisible before fade-in */
+      }
+      25%, 65% {
+        opacity: 1; /* Fully visible for 2 seconds */
+      }
+      70%, 100% {
+        opacity: 0; /* Fades out after visibility */
+      }
+  }
+
+@media (max-width : 660px){
+    .Why-Section .Whyimgs-animation{
+        width: 100% !important;
+        height: 200px;
+        margin: 0 -40px;
+    }
 }

@@ -3,9 +3,9 @@ import "./ourservices.css"
 
 export default function OurServices() {
   return (
-    <div className='OurServices pt-4 pb-4 ps-lg-4 ps-md-2 pe-lg-4 pe-md-2 text-center'>
+    <div className='OurServices pt-4 pb-4 ps-lg-4 ps-md-2 pe-lg-4 pe-md-2 text-center '>
       <h4 className='fw-medium'>Our Services</h4>
-      <div className="services-cards d-flex mt-3 p-3 row">
+      <div className="services-cards d-flex mt-3 p-3 row text-white">
         <div className="service-card p-4 m-4 col" role='button'>
             <i className="fa-solid fa-car-on  mb-4"></i>
             <h6>Fix Your Ride , Fast Service!</h6>

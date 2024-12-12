@@ -1,5 +1,5 @@
 .searchInput {
-    width: 60%;
+    width: 50%;
     background-color: #152836;
     position: relative;
 }
@@ -36,6 +36,11 @@
 }
 .range-container label p {
     font-size: 12px;
+}
+
+.topFormPart input , .topFormPart select{
+    min-width: 200px;
+    height: 40px;
 }
 
 .slider {

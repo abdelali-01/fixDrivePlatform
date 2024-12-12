@@ -11,3 +11,8 @@
     right: 5px;
     font-size: 14px;
 }
+
+.ContactForm {
+    min-width: 300px;
+    width: 40%;
+}

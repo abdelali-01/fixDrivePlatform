@@ -1,9 +1,18 @@
 .sticky-top{
   backdrop-filter: blur(10px);
+
 }
 .navbar{
   width: 90%;
   margin: auto;
+}
+.nav-item{
+  padding: 3px 8px;
+  border-radius: 30px;
+  transition: .3s;
+}
+.nav-item:hover{
+   background-color: var(--elements-color);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -24,3 +33,36 @@
     left: 0;
     z-index: 1000;
   }
+  .dropdown-item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .dropdown-item::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: var(--btn-color);
+    left: 16px;
+    bottom: 0px;
+    transition: .4s;
+  }
+  .dropdown-item:hover::after {
+    width: 100%;
+  }
+
+
+@media (max-width : 1015px){
+  .navbar .navbar-brand img {
+    width: 120px;
+  }
+  .navbar , button{
+    font-size: 14px !important;
+  }
+}
+@media (max-width : 990px){
+  .nav-item:hover{
+    background-color: transparent;
+ }
+}

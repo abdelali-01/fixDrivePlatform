@@ -22,3 +22,14 @@
 .footer-links .links p:hover {
     color: #EEEE !important;
 }
+
+.bottom-foot p{
+    min-width: 200px;
+    margin: 10px auto;
+}
+
+@media (max-width: 660px){
+    .footer-links{
+        text-align: center !important;
+    }
+}

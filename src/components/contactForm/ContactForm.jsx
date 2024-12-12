@@ -7,7 +7,7 @@ export default function ContactForm() {
   const [count, setCount] = useState();
   return (
     <div
-      className="ContactFormSection p-5 d-flex align-items-start gap-5 "
+      className="ContactFormSection p-3 pt-5 pb-5 d-flex flex-wrap align-items-start gap-5 "
       style={{
         backgroundImage: `url(${PF}ContactBackground.png)`,
         backgroundPosition: "center",
@@ -17,16 +17,17 @@ export default function ContactForm() {
       <iframe
         title="platfomLocation"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51144.64919265495!2d3.450486987297507!3d36.757597297958704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e68dcc89e5b23%3A0x84e914279405eb13!2sBoumerdes!5e0!3m2!1sen!2sdz!4v1733775062432!5m2!1sen!2sdz"
-        width="600"
-        height="550"
+        width="50%"
+        height="450"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         style={{
           opacity: "0.8",
+          flexGrow : "1"
         }}
       />
-      <div className="ContactForm w-50">
+      <div className="ContactForm flex-grow-1">
         <h4>Contact Us</h4>
         <form action="" className="mt-4">
           <div className="input d-flex flex-column gap-1 ">

@@ -64,12 +64,14 @@ export default function Reviews() {
         breakpoint: 768, // For tablets and phones
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1024, // For medium-sized devices
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],

@@ -4,7 +4,6 @@
 .card-review {
     background-color:var(--elements-color);
     border-radius: 10px;
-    height: 250px;
     transition: transform 0.3s ease;
     border: 1px solid var(--white-color);
   }
@@ -22,3 +21,16 @@
   .comment-review p {
     flex-grow: 1;
   }
+
+@media (max-width : 420px){
+  .username-job h5 {
+    font-size: 14px !important;
+  }
+  .username-job p {
+    font-size: 12px !important;
+  }
+  .userProfile {
+    gap: 10px !important;
+  }
+
+}

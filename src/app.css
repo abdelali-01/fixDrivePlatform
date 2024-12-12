@@ -9,9 +9,10 @@ a{
 
 :root {
     --backgrounds-color : #0B0C10 ;
+    --light-bg : #EEF5FA;
     --btn-color : #007CC7 ;
     --white-color : #FFFFFF ;
-    --elements-color : #071620; 
+    --elements-color : #071620;     
 }
 ::-webkit-scrollbar { 
     width: 10px;
@@ -21,5 +22,10 @@ a{
 }
 ::-webkit-scrollbar-track {
     background-color: var(--white-color);
+}
+
+body.light-mode {
+    background-color: var(--light-bg) !important;
+    color: var(--backgrounds-color) !important;
 }
 
