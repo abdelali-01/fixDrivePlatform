@@ -18,13 +18,9 @@ export default function Home() {
       <div className="home-container mt-5">
         <div className="container presentSection d-flex  flex-wrap">
             <Can whiteMood={"white"} />
-            <div className="imgs-animation">
-              <img src={PF+"services/service1.jpg"} alt="" className='w-100' />
-              <img src={PF+"services/service2.jpg"} alt="" className='w-100' />
-              <img src={PF+"services/service3.jpg"} alt="" className='w-100' />
-              <img src={PF+"services/service4.jpg"} alt="" className='w-100' />
+            <div className="img">
+              
             </div>
-            <div className="overidebackgound"></div>
         </div>
         <div className="mt-5 pt-5">
           <OurServices />
@@ -35,7 +31,6 @@ export default function Home() {
           <Footer/>
         </div>
       </div>
-      <ThemeBtn/>
     </div>
   )
 }
