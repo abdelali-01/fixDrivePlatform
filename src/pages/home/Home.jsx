@@ -15,11 +15,13 @@ export default function Home() {
   return (
     <div className='HomePage '>
       <Navbar whiteMood={"white"}/>
-      <div className="home-container mt-5">
-        <div className="container presentSection d-flex  flex-wrap">
-            <Can whiteMood={"white"} />
-            <div className="img">
-              
+      <div className="home-container">
+        <div className="container presentSection pt-5 d-flex align-items-center">
+            <Can whiteMood={"white"}/>
+            <div className="img position-absolute" style={{
+              right : "0"
+            }}>
+              <img src={PF+"heroPic.png"} alt="" width={"719"}/>
             </div>
         </div>
         <div className="mt-5 pt-5">

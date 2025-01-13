@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
         <hr />
         <div className="bottom-foot d-flex justify-content-between align-items-center mt-4 flex-wrap">
-          <div className="footer-brand m-auto">
+          <div className="footer-brand">
             <img src={PF + "logo.png"} className="" alt="" width="120" />
           </div>
           <p className="text-white-50" style={{ fontSize: "13px" }}>

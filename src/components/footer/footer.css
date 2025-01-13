@@ -25,7 +25,6 @@
 
 .bottom-foot p{
     min-width: 200px;
-    margin: 10px auto;
 }
 
 @media (max-width: 660px){

@@ -1,18 +1,50 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ whiteMood }) {
+  // some state to manage the navbar position
+  const [scroll, setScroll] = useState(0);
+  const prevScroll = useRef(0);
+  const [NavStatus , setNavStatus] = useState(false);
+  
+  useEffect(() => {
+    // Define the scroll event handler
+    const handleScroll = () => {
+      setScroll(window.scrollY);
+    };
+    // Add the event listener
+    window.addEventListener("scroll", handleScroll);
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // this hook will put the navbar with sticky top position if we scroll up
+  useEffect(()=>{
+    if(scroll < prevScroll.current ){
+      setNavStatus(true);
+    }else{
+      setNavStatus(false);
+    }
+
+    prevScroll.current = scroll ;
+  },[scroll])
+
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <nav
-      className={`container-fluid  sticky-top   ${
-        whiteMood ? "text-white" : "text-dark"
-      }`}
+      className={`container-fluid ${NavStatus && "sticky-top"} ${whiteMood ? "text-white" : "text-dark"}`}
     >
       <div className="navbar navbar-expand-lg">
         <Link to="/" className="navbar-brand">
-          <img src={PF + "logo.png"} alt="Logo" width="140" className="navbar-brand" />
+          <img
+            src={PF + "logo.png"}
+            alt="Logo"
+            width="140"
+            className="navbar-brand"
+          />
         </Link>
         <div className="navOpenMenuIcon">
           <button
@@ -27,26 +59,22 @@ export default function Navbar({ whiteMood }) {
             <i className="fa-solid fa-bars fs-1 text-white"></i>
           </button>
         </div>
-        <div className="collapse navbar-collapse p-3" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse p-3"
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav m-auto mb-2 mb-lg-0">
             {/* Services Dropdown */}
-            <li className="nav-item dropdown">
-              <Link
-                to="/services"
-                className="nav-link d-flex align-items-center"
-                role="button"
-                aria-expanded="false"
-              >
-                <span className="me-2">Services</span>
-                <i className="fa-solid fa-angle-down"></i>
-              </Link>
-              <ul className="dropdown-menu">
-                <li className="dropdown-item">Buy with Confidence!</li>
-                <li className="dropdown-item">Sell Your Car Fast</li>
-                <li className="dropdown-item">Drive Away Today</li>
-                <li className="dropdown-item">Fix Your Ride, Fast Service!</li>
-              </ul>
-            </li>
+            <div className="d-flex align-items-center">
+              <li className="nav-item">
+                <Link
+                  to="/services"
+                  className="nav-link d-flex align-items-center"
+                >
+                  <span className="">Services</span>
+                </Link>
+              </li>
+            </div>
 
             {/* Partners Dropdown */}
             <li className="nav-item dropdown">

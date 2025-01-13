@@ -1,18 +1,25 @@
 import Home from "./pages/home/Home";
 import "./app.css";
 import Services from "./pages/services/Services";
-import { BrowserRouter as Router , Routes , Route} from "react-router-dom"
+import { Routes , Route, useLocation} from "react-router-dom"
+import { animateScroll as scroller } from "react-scroll";
+import { useEffect } from "react";
 
 function App() {
-  return (
+  const {pathname} = useLocation();
 
-      <Router>
+  useEffect(()=>{
+    scroller.scrollTo(0 ,{
+      smooth: true,
+      duration: 800,
+    });
+  },[pathname])
+
+  return (
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/services" element={<Services/>}/>
         </Routes>
-      </Router>
-
   );
 }
 
