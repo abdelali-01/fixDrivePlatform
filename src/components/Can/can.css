@@ -1,15 +1,15 @@
 .Can {
   min-width: 350px;
-  max-width: 400px;
+  max-width: 420px;
 }
-.services-container{
-    align-items:flex-start;
-}
+
 .services-container {
+  align-items:flex-start;
   height: 40px;
   line-height: 40px;
   overflow: hidden;
 }
+
 .services {
     display: flex;
     flex-direction: column;

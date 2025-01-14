@@ -4,6 +4,7 @@ import Services from "./pages/services/Services";
 import { Routes , Route, useLocation} from "react-router-dom"
 import { animateScroll as scroller } from "react-scroll";
 import { useEffect } from "react";
+import Search from "./pages/search/Search";
 
 function App() {
   const {pathname} = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/services" element={<Services/>}/>
+            <Route path="/search" element={<Search/>}/>
         </Routes>
   );
 }

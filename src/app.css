@@ -1,15 +1,17 @@
-a{
-    text-decoration: none !important;
-    color: inherit !important;
-}
-*{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    padding: 0;
-    scroll-behavior: smooth !important;
+@font-face {
+    font-family: 'varien';
+    src: url('./assets/fonts/varien.otf') format('opentype');
 }
 
-html {
-    scroll-behavior: smooth !important;
+
+*{
+    padding: 0;  
+    /* font-weight: 100;   */
+}
+
+h1 , h2 , h3 , h4 , button , .s-key{
+    font-family: "varien", sans-serif !important;
+
 }
 
 :root {
@@ -28,11 +30,14 @@ html {
 ::-webkit-scrollbar-track {
     background-color: var(--white-color);
 }
-/* body {
-    background-color: var(--backgrounds-color) !important;
-} */
+
+
 body.light-mode {
     background-color: var(--light-bg) !important;
     color: var(--backgrounds-color) !important;
 }
 
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}

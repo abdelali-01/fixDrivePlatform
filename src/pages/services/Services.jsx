@@ -21,6 +21,10 @@ export default function Services() {
     return post.role === "car rental";
   });
 
+  const fixPosts = posts.filter((post) => {
+    return post.role === "fixer";
+  });
+
   return (
     <div className=" ServicesPage z-n2">
       <Navbar whiteMood={true} />
@@ -28,20 +32,20 @@ export default function Services() {
         <div className="imgsServiceAnimation position-absolute top-0 ">
           <img src={PF + "serviceImg1.png"} alt="" />
         </div>
-        <div
-          className="canInService mt-5"
-          style={{
-            width: "80%",
-            margin: "auto",
-          }}
-        >
-          <Can whiteMood={true} />
+        <div className="canInService container mt-5">
+          <div style={{maxWidth : "340px"}}>
+            <h3>Find your dream car</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur animi quaerat perferendis,
+              fugit provident architecto maxime?
+            </p>
+          </div>
         </div>
         <div className="filterFormInService">
           <FilterForm />
         </div>
       </div>
-      <div className="cardSectionView pt-5  pb-5">
+      <div className="cardSectionView py-5 container">
         <div className="rangeServiceSection  mt-5">
           <div className="topServiceSection d-flex justify-content-between">
             <h4>Buy with Confidence!</h4>
@@ -55,7 +59,7 @@ export default function Services() {
               ></i>
             </span>
           </div>
-          <div className="cardRangeSection border border-primary rounded-3 px-2 mt-3 d-flex gap-3">
+          <div className="cardRangeSection  rounded-3 px-2 mt-3 d-flex gap-3">
             {showroomPosts.map((post) => {
               return <CarCard key={post._id} post={post} />;
             })}
@@ -74,10 +78,10 @@ export default function Services() {
               ></i>
             </span>
           </div>
-          <div className="cardRangeSection row mt-3  gap-3">
-            {/* {rentPosts.map((post) => {
-              return <CarCard />;
-            })} */}
+          <div className="cardRangeSection  rounded-3 px-2 mt-3 d-flex gap-3">
+            {rentPosts.map((post) => {
+              return <CarCard post={post} />;
+            })}
           </div>
         </div>
         <div className="rangeServiceSection mt-5">
@@ -93,10 +97,10 @@ export default function Services() {
               ></i>
             </span>
           </div>
-          <div className="cardRangeSection row mt-3 gap-3">
-            {/* {showroomPosts.map((post) => {
-              return <CarCard />;
-            })} */}
+          <div className="cardRangeSection  rounded-3 px-2 mt-3 d-flex gap-3">
+            {fixPosts.map((post) => {
+              return <CarCard post={post} />;
+            })}
           </div>
         </div>
       </div>

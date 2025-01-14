@@ -5,18 +5,9 @@
 .imgsServiceAnimation img {
     object-fit: cover !important;
 }
-.topServiceSection  h4{
-    text-transform: uppercase;
-}
-.rangeServiceSection{
-    width: 80%;
-    margin: auto;
-}
-
 .cardRangeSection {
     overflow-x: auto;
 }
-
 .cardRangeSection::-webkit-scrollbar {
     display: none;
 }
