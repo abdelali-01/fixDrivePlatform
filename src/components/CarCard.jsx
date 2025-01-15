@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function CarCard({ post }) {
-  console.log(post);
-
   return (
     <div
       className="carCard p-1 d-flex flex-column justify-content-between flex-grow-1"

@@ -21,7 +21,7 @@
     transform: translateY(-50%);
 }
 
-.topFormPart select {
+select {
     background-color: #152836;
     outline: none;
     border: none;
@@ -30,7 +30,7 @@
     padding: 0 8px;
 }
 
-.bottomFormPart .locationInput{
+.locationInput{
     width: 40%;
     background-color: #152836;
 }
